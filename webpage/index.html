@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="text">
+                <div class="hero-container">
+                    <div class="iss-container">
+                        <img src="./assets/iss.png" />
+                    </div>
+                    <div class="img-container" >
+                        <img src="./assets/astronaut.png" alt="astronaut image using a NASA suit" />
+                    </div>
+                    <div class="cta-container" >
+                        <div class="wrapper">
+                            <span id="cta-title" >SPACE</span>
+                            <p id="cta-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere tellus sed tristique ultricies. Etiam congue ac elit non dictum. Donec commodo urna nec mi aliquet</p>
+                            <button>saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const titleWidth = document.querySelector('#cta-title');
+        const ctaDescription = document.querySelector("#cta-description");
+        ctaDescription.style.width = `calc(${titleWidth.offsetWidth}px - 4vw)`;
+    </script>
+</body>
+
+</html>
